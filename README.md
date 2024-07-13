@@ -8,8 +8,6 @@ Welcome to the Chai aur Code: 30 Days JavaScript Challenge by Aditya! This chall
 2. [Getting Started](#getting-started)
 3. [Daily Tasks](#daily-tasks)
 4. [Resources](#resources)
-5. [Contributing](#contributing)
-6. [License](#license)
 
 ## Introduction
 
