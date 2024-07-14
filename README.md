@@ -35,6 +35,7 @@ To start the challenge:
 Each day has its own folder containing a README file with instructions, and any starter code or resources you'll need. Here's a brief overview of what to expect:
 
 - **Day 1:** Introduction to Variables and Data Types
+- **Day 2:** Operators
 
 ## Resources
 
