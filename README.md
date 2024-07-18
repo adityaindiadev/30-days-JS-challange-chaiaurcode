@@ -39,6 +39,7 @@ Each day has its own folder containing a README file with instructions, and any 
 - **Day 3:** Control Structures
 - **Day 4:** Loops
 - **Day 5:** Functions
+- **Day 6:** Arrays
 
 ## Resources
 
