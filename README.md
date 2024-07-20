@@ -41,6 +41,7 @@ Each day has its own folder containing a README file with instructions, and any 
 - **Day 5:** Functions
 - **Day 6:** Arrays
 - **Day 7:** Objects
+- **Day 8:** ES6+ Features
 
 ## Resources
 
