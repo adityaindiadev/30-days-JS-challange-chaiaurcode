@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Original Heading</h1>
+    <p class="paragraph">This is a paragraph.</p>
+    <ul id="list">
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    <button id="btn">Click me!</button>
+    <div id="hover-me">Hover over me!</div>
+    <p id="remove-me">This paragraph will be removed.</p>
+
+    <script>
+        // Task 1: Select an HTML element by its ID and change its text content.
+        document.getElementById("heading").textContent = "New Heading";
+
+        // Task 2: Select an HTML element by its class and change its background color.
+        document.querySelector(".paragraph").style.backgroundColor = "lightblue";
+
+        // Task 3: Create a new element with some text content and append it to the body.
+        const newElement = document.createElement("p");
+        newElement.textContent = "This is a new paragraph.";
+        document.body.appendChild(newElement);
+
+        // Task 4: Create a new element and add it to an existing list.
+        const newListItem = document.createElement("li");
+        newListItem.textContent = "Item 3";
+        document.getElementById("list").appendChild(newListItem);
+
+        // Task 5: Select an HTML element and remove it from the DOM.
+        const removeMe = document.getElementById("remove-me");
+        removeMe.parentNode.removeChild(removeMe);
+
+        // Task 6: Remove the last child of a specific HTML element.
+        const list = document.getElementById("list");
+        list.removeChild(list.lastChild);
+
+        // Task 7: Select an HTML element and change one of its attributes (e.g., of an tag).
+        const link = document.createElement("a");
+        link.href = "https://www.example.com";
+        link.textContent = "Visit example.com";
+        document.body.appendChild(link);
+
+        // Task 8: Add and remove a CSS class to/from an HTML element.
+        const hoverMe = document.getElementById("hover-me");
+        hoverMe.classList.add("highlight");
+        hoverMe.addEventListener("mouseout", () => {
+            hoverMe.classList.remove("highlight");
+        });
+
+        // Task 9: Add a click event listener to a button that changes the text content of a paragraph.
+        const btn = document.getElementById("btn");
+        const paragraph = document.querySelector(".paragraph");
+        btn.addEventListener("click", () => {
+            paragraph.textContent = "Button was clicked!";
+        });
+
+        // Task 10: Add a mouseover event listener to an element that changes its border color.
+        hoverMe.addEventListener("mouseover", () => {
+            hoverMe.style.borderColor = "red";
+        });
+    </script>
+</body>
+</html>
